@@ -44,4 +44,5 @@ html, body, #root {
     height: auto;
     min-height: 100%;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
