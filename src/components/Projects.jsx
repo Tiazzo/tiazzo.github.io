@@ -30,7 +30,7 @@ export default function Projects() {
                         >
                             {/* Immagine */}
                             <figure className="w-full lg:w-48">
-                                <img src={project.image} alt={project.title} className="object-cover w-full h-full" />
+                                <img src={project.image} alt={project.title} className="object-cover w-full h-full"/>
                             </figure>
 
                             {/* Contenuto */}

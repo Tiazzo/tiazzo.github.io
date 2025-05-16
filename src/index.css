@@ -67,8 +67,12 @@
 /*  }*/
 /*}*/
 
+@import url('https://rsms.me/inter/inter.css');
+
 @import "tailwindcss";
+
 @plugin "daisyui";
+
 
 html {
     scroll-behavior: smooth;

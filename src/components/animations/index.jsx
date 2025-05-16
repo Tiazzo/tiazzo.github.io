@@ -1,23 +1,24 @@
-import { motion, useScroll, useSpring, useTransform, useMotionValueEvent } from "framer-motion";
-import { useState } from "react";
+import {motion, useScroll, useSpring, useTransform, useMotionValueEvent} from "framer-motion";
+import {useState} from "react";
 
 export function ProgressBar() {
-    const { scrollYProgress } = useScroll();
+    const {scrollYProgress} = useScroll();
     return (
         <motion.div
             className="fixed top-0 left-0 right-0 h-1 bg-teal-400 origin-left"
-            style={{ scaleX: scrollYProgress }}
+            style={{scaleX: scrollYProgress}}
         />
     );
 }
 
-export function FadeInSection({ children }) {
+export function FadeInSection({children}) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            id={id}
+            initial={{opacity: 0, y: 50}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{amount: 0.3}}
+            transition={{duration: 0.5}}
         >
             {children}
         </motion.div>
@@ -25,7 +26,7 @@ export function FadeInSection({ children }) {
 }
 
 export function SmoothProgressBar() {
-    const { scrollYProgress } = useScroll()
+    const {scrollYProgress} = useScroll()
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
         damping: 30,
@@ -34,16 +35,16 @@ export function SmoothProgressBar() {
 
     return (
         <motion.div
-            initial={{ scaleX: 0 }}
+            initial={{scaleX: 0}}
             className="fixed top-0 left-0 right-0 h-1 bg-teal-400 origin-left z-50"
-            style={{ scaleX }}
+            style={{scaleX}}
         />
     )
 }
 
 
 export function ColorChangeOnScroll() {
-    const { scrollYProgress } = useScroll();
+    const {scrollYProgress} = useScroll();
     const backgroundColor = useTransform(
         scrollYProgress,
         [0, 0.5, 1],
@@ -53,7 +54,21 @@ export function ColorChangeOnScroll() {
     return (
         <motion.div
             className="fixed inset-0 -z-10"
-            style={{ backgroundColor }}
+            style={{backgroundColor}}
         />
     );
+}
+
+
+export default function FadeInBlock({children, delay = 0}) {
+    return (
+        <motion.div
+            initial={{opacity: 0, y: 40}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{amount: 0.3, once: true}}
+            transition={{duration: 0.6, delay}}
+        >
+            {children}
+        </motion.div>
+    )
 }
