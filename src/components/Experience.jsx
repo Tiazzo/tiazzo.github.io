@@ -26,6 +26,10 @@ const experiences = [
         description:
             "Developed and managed an automated deployment system for microservices-based applications on Azure, leveraging Terraform, Jenkins, JFrog, Docker, and Kubernetes following DevOps best practices",
         tech: ["Azure Cloud", "Terraform", "Azure Kubernetes Service", "Jenkins"],
+        attachment: {
+            label: "Bachelor Thesis Presentation (PDF)",
+            url: "/files/bachelor_thesis.pdf"
+        }
     },
 ];
 
@@ -51,6 +55,16 @@ export default function Experience() {
                                     </a>
                                 </h3>
                                 <p className="mt-2 text-neutral-400">{exp.description}</p>
+                                {exp.attachment && (
+                                    <a
+                                        href={exp.attachment.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-3 inline-block text-sm text-primary underline hover:text-primary-focus"
+                                    >
+                                        📄 {exp.attachment.label}
+                                    </a>
+                                )}
                                 <ul className="flex flex-wrap gap-2 mt-4 text-sm text-neutral-500">
                                     {exp.tech.map((tech, i) => (
                                         <li key={i} className="badge badge-outline">

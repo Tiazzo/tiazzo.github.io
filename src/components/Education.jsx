@@ -47,24 +47,24 @@ export default function Education() {
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-bold flex items-center gap-2 flex-wrap">
-                         <span className="whitespace-pre-line">
+                        <h3 className="text-lg font-bold whitespace-pre-line">
                             {edu.degree}
-                          </span>{" "}
-                            <a
+                        </h3>
+                        <a
                             href={edu.universityUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-primary underline hover:text-primary-focus"
+                            className="text-primary font-semibold underline hover:text-primary-focus block mt-1 mb-2"
                         >
                             {edu.institution}
                         </a>
+                        {edu.type === 'masters' && (
+                            <span className="badge badge-outline text-xs">🎓 Master's Degree</span>
+                        )}
+                        {edu.type === 'bachelor' && (
+                            <span className="badge badge-outline text-xs">📘 Bachelor</span>
+                        )}
 
-                            {edu.type === 'masters' && (
-                                <span className="badge badge-outline text-xs">🎓 Master's Degree</span>)}
-                            {edu.type === 'bachelor' && (
-                                <span className="badge badge-outline text-xs">📘 Bachelor</span>)}
-                        </h3>
 
 
                         <p className="mt-2 text-neutral-400">{edu.description}</p>
