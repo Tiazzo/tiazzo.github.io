@@ -1,9 +1,18 @@
 const education = [{
+    institution: "Chalmers University",
+    degree: "Exchange Student (Data Science and AI)",
+    date: "2024 – 2025",
+    description: "Exchange year as part of the Master’s program in Artificial Intelligence and Data Analytics, supported by the Erasmus+ scholarship. Focused on advanced topics in LLMs, deep learning, autonomous systems and cybersecurity.",
+    courses: ["Deep Machine Learning", "Data-driven Product Realization", "Autonomous and Cooperative Vehicular Systems", "Computer Security"],
+    universityUrl: "https://www.chalmers.se/en/",
+    logo: "/images/chalmers.svg",
+    type: "masters",
+},{
     institution: "Politecnico di Torino",
     degree: "Master Degree in Computer Engineering \n(AI & Data Analytics)",
-    date: "2023 – Presente",
-    description: "...",
-    courses: ["AI", "Machine Learning", "Computer Vision"],
+    date: "2023 – Current",
+    description: "Focused on advanced topics in artificial intelligence, machine learning, big data analytics, software engineering, and web development. The program emphasizes both theoretical foundations and hands-on experience through labs and applied projects.",
+    courses: ["Data Science and Database Technologies", "Big Data Processing and Analytics", "Bioinformatics", "Computer Architectures", "Web Applications I"],
     universityUrl: "https://www.polito.it/en",
     logo: "/images/logo_politecnico-cropped.svg",
     type: "masters",
@@ -11,8 +20,8 @@ const education = [{
     institution: "University of Turin",
     degree: "Bachelor Degree in Computer Science",
     date: "Sep 2019 - Nov 2022",
-    description: "...",
-    courses: ["Java", "Web Dev", "Sistemi Operativi"],
+    description: "Acquired strong foundations in software development, algorithms, data structures, databases, computer networks, and operating systems. Developed skills in problem solving, system design, and group collaboration.",
+    courses: ["Programming in Java", "Data Structures and Algorithms", "Databases", "Operating Systems", "Computer Networks"],
     universityUrl: "https://en.unito.it/",
     logo: "images/logo_unito_verticale-cropped.svg",
     type: "bachelor",
@@ -42,7 +51,7 @@ export default function Education() {
                          <span className="whitespace-pre-line">
                             {edu.degree}
                           </span>{" "}
-                            · <a
+                            <a
                             href={edu.universityUrl}
                             target="_blank"
                             rel="noopener noreferrer"
