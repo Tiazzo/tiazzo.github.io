@@ -40,6 +40,8 @@
 /*.read-the-docs {*/
 /*  color: #888;*/
 /*}*/
+@import url('https://rsms.me/inter/inter.css');
+
 html, body, #root {
     height: auto;
     min-height: 100%;

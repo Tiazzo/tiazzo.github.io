@@ -1,21 +1,31 @@
 const experiences = [
     {
-        role: "Frontend Developer",
-        company: "Azienda XYZ",
-        companyUrl: "https://azienda.xyz",
-        date: "Gen 2022 – Presente",
+        role: "Master Thesis Student",
+        company: "Chalmers (Vehicle Safety Department)",
+        companyUrl: "https://www.chalmers.se/en/departments/m2/research/vehicle-safety/",
+        date: "Jan 2025 – Present",
         description:
-            "Ho lavorato allo sviluppo e alla manutenzione di interfacce utente responsive usando React e Tailwind CSS. Collaborato con il team di backend per integrare API REST e ottimizzare le performance dell'applicazione.",
-        tech: ["React", "Tailwind", "TypeScript"],
+            "Built a pipeline using Large Language Models to extract structured data from crash summaries, integrating RAG, advanced prompting, and fine-tuned open-source models for low-supervision evaluation.",
+        tech: ["Python", "Hugging Face", "LLMs", "RAG", "Prompt Engineering"]
+
     },
     {
-        role: "Junior Developer",
-        company: "Dev Company",
-        companyUrl: "https://devcompany.com",
-        date: "Set 2020 – Dic 2021",
+        role: "Cyber Security Consultant",
+        company: "Lutech Group",
+        companyUrl: "https://lutech.group/en",
+        date: "Nov 2022 - Oct 2023",
         description:
-            "Ho supportato lo sviluppo di dashboard interne e strumenti per il team marketing. Creato componenti riutilizzabili in Vue e migliorato l'accessibilità.",
-        tech: ["Vue", "Sass", "Git"],
+            "Managed IAM infrastructure for UniCredit, ensuring secure and compliant access through Azure AD, on-prem AD, and real-time monitoring with Splunk.",
+        tech: ["Azure IAM", "Azure AD", "AD on-premise", "Splunk"],
+    },
+    {
+        role: "Cloud Engineer Intern",
+        company: "Lutech Group",
+        companyUrl: "https://lutech.group/en",
+        date: "Jun 2022 - Nov 2022",
+        description:
+            "Developed and managed an automated deployment system for microservices-based applications on Azure, leveraging Terraform, Jenkins, JFrog, Docker, and Kubernetes following DevOps best practices",
+        tech: ["Azure Cloud", "Terraform", "Azure Kubernetes Service", "Jenkins"],
     },
 ];
 
@@ -23,7 +33,7 @@ export default function Experience() {
     return (
         <section id="experience" className="pt-24 pb-24">
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-semibold mb-10">Experience</h2>
+                <h2 className="text-3xl font-semibold mb-10">Experience</h2>
                 <div className="space-y-12">
                     {experiences.map((exp, index) => (
                         <div key={index} className="grid grid-cols-1 md:grid-cols-[150px_1fr] gap-6">

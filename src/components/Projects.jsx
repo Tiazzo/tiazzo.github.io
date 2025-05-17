@@ -2,16 +2,16 @@ const projects = [
     {
         title: "AI Captioning",
         description:
-            "Sistema per generare descrizioni automatiche di immagini con deep learning (CNN + RNN).",
+            "bla bla",
         tech: ["PyTorch", "CNN", "LSTM"],
-        link: "https://github.com/tuo-utente/ai-captioning",
+        link: "https://github.com/Tiazzo/image-captioning",
         image: "images/gas_station.png", // metti il file in /public/images/
     },
     {
         title: "Backup Voice App",
         description:
-            "App desktop che esegue backup tramite comandi vocali. Sviluppata in Python con riconoscimento vocale.",
-        tech: ["Python", "SpeechRecognition", "Tkinter"],
+            "bla bla",
+        tech: ["Rust", "Threads"],
         link: "https://github.com/tuo-utente/backup-voice-app",
         image: "images/garden.jpg",
     },
@@ -21,7 +21,7 @@ export default function Projects() {
     return (
         <section id="projects" className="pt-24 pb-24">
             <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl font-semibold mb-10">Projects</h2>
+                <h2 className="text-3xl font-semibold mb-10">Projects</h2>
                 <div className="space-y-10">
                     {projects.map((project, index) => (
                         <div
