@@ -71,7 +71,8 @@ export default function Navigation({activeSection}) {
 
 
         {/* Sidebar desktop */}
-        <aside className="hidden lg:flex fixed top-0 left-0 h-screen w-1/2 flex-col items-center justify-start p-8 bg-base-100 backdrop-blur z-50">
+        <aside
+            className="hidden lg:flex fixed top-0 left-0 h-screen w-1/2 flex-col items-center justify-start p-8 bg-base-100 backdrop-blur z-50">
 
 
             <div className="w-full max-w-xs flex flex-col items-start pt-32">
@@ -81,12 +82,16 @@ export default function Navigation({activeSection}) {
                 <div className="w-full max-w-xs px-1 mb-20">
                     <div className="flex justify-between items-center text-xl text-base-content/60">
                         <div className="flex gap-4">
-                            <a href="mailto:mattia.carlino22@gmail.com" className="hover:text-primary" aria-label="Email"><FaEnvelope/></a>
-                            <a href="https://github.com/Tiazzo" target="_blank" className="hover:text-primary" aria-label="GitHub"><FaGithub/></a>
-                            <a href="https://www.linkedin.com/in/mattia-carlino-8b6071228/" target="_blank" className="hover:text-primary" aria-label="LinkedIn"><FaLinkedin/></a>
+                            <a href="mailto:mattia.carlino22@gmail.com" className="hover:text-primary"
+                               aria-label="Email"><FaEnvelope/></a>
+                            <a href="https://github.com/Tiazzo" target="_blank" className="hover:text-primary"
+                               aria-label="GitHub"><FaGithub/></a>
+                            <a href="https://www.linkedin.com/in/mattia-carlino-8b6071228/" target="_blank"
+                               className="hover:text-primary" aria-label="LinkedIn"><FaLinkedin/></a>
                         </div>
-                        <button onClick={toggleTheme} className="hover:text-primary transition text-2xl" aria-label="Toggle Theme">
-                            {theme === 'dark' ? <FiSun /> : <FiMoon />}
+                        <button onClick={toggleTheme} className="hover:text-primary transition text-2xl"
+                                aria-label="Toggle Theme">
+                            {theme === 'dark' ? <FiSun/> : <FiMoon/>}
                         </button>
                     </div>
                 </div>
