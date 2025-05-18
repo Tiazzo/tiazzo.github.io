@@ -12,18 +12,18 @@ const projects = [{
     link: "https://github.com/Tiazzo/Safety-System-Design",
     image: "images/projects/airbag_system_design.png",
 }, {
-    title: "Autonomous Vehicle",
+    title: "Lane-Change Decision-Making for Autonomous Vehicles\n",
     description: "Designed and evaluated rule-based and ML for autonomous lane-change decisions using SUMO simulations. Compared models on safety, efficiency, and comfort in dynamic traffic scenarios as part of a project at Chalmers.",
     tech: ["Python", "SUMO", "TraCI", "Machine Learning", "SVM", "Rule-Based Models"],
     link: "https://github.com/Tiazzo/autonomous-vehicles",
     image: "images/projects/traci.png",
 }, {
-        title: "Emergency Backup Application",
-        description: "Developed a cross-platform emergency backup tool in Rust that enables file backup without a functional monitor. The application detects mouse-drawn gestures and provides audio guidance to confirm and execute the backup. Designed for reliability in critical scenarios using voice feedback, USB detection, and configurable file filters.",
-        tech: ["Rust", "Multithreading", "Concurrency", "Operating System"],
-        link: "https://github.com/Tiazzo/emergency-backup",
-        image: "images/projects/backup_application_2.png",
-    },
+    title: "Emergency Backup Application",
+    description: "Developed a cross-platform emergency backup tool in Rust that enables file backup without a functional monitor. The application detects mouse-drawn gestures and provides audio guidance to confirm and execute the backup. Designed for reliability in critical scenarios using voice feedback, USB detection, and configurable file filters.",
+    tech: ["Rust", "Multithreading", "Concurrency", "Operating System"],
+    link: "https://github.com/Tiazzo/emergency-backup",
+    image: "images/projects/backup_application_2.png",
+},
 ];
 
 export default function Projects() {
@@ -33,14 +33,15 @@ export default function Projects() {
             <div className="space-y-10">
                 {projects.map((project, index) => (<div
                     key={index}
-                    className="card lg:card-side bg-base-100 shadow-md"
+                    className="card bg-base-100 shadow-md"
                 >
-                    {/* Immagine */}
-                    <figure className="w-full lg:w-48">
-                        <img src={project.image} alt={project.title} className="object-cover w-full h-full"/>
+                    {/* Imagine */}
+                    <figure>
+                        <img src={project.image} alt={project.title} className="w-full h-auto object-cover rounded-t" />
                     </figure>
 
-                    {/* Contenuto */}
+
+                    {/* Content*/}
                     <div className="card-body">
                         <h3 className="card-title">
                             {project.link ? (<a
