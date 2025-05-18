@@ -40,9 +40,9 @@ function App() {
         <>
             <div className="bg-base-100 text-base-content min-h-screen overflow-x-hidden font-sans">
                 <Navigation activeSection={activeSection}/>
-                <div className="lg:flex items-start pt-22">
-                    <main className="lg:ml-[50%] pt-24 px-6 w-full">
-                        <div className="max-w-3xl mx-auto px-6">
+                <div className="lg:flex items-start">
+                    <main className="lg:pt-41 lg:ml-[50%] px-20 w-full">
+                    <div className="max-w-3xl mx-auto">
                             <About/>
                             <Experience/>
                             <Projects/>
