@@ -43,17 +43,16 @@ export default function Experience() {
                         <div key={index} className="grid grid-cols-1 md:grid-cols-[150px_1fr] gap-6">
                             <div className="text-sm text-neutral-500">{exp.date}</div>
                             <div>
-                                <h3 className="text-lg font-bold">
-                                    {exp.role} ·{" "}
-                                    <a
-                                        href={exp.companyUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-primary underline hover:text-primary-focus"
-                                    >
-                                        {exp.company}
-                                    </a>
-                                </h3>
+                                <h3 className="text-lg font-bold">{exp.role}</h3>
+                                <a
+                                    href={exp.companyUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-primary font-semibold underline hover:text-primary-focus"
+                                >
+                                    {exp.company}
+                                </a>
+
                                 <p className="mt-2 text-neutral-400">{exp.description}</p>
                                 {exp.attachment && (
                                     <a
