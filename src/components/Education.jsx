@@ -5,7 +5,7 @@ const education = [{
     description: "Exchange year as part of the Master’s program in Artificial Intelligence and Data Analytics, supported by the Erasmus+ scholarship. Focused on advanced topics in LLMs, deep learning, autonomous systems and cybersecurity.",
     courses: ["Deep Machine Learning", "Data-driven Product Realization", "Autonomous and Cooperative Vehicular Systems", "Computer Security"],
     universityUrl: "https://www.chalmers.se/en/",
-    logo: "/images/chalmers.svg",
+    logo: "/images/education/chalmers.svg",
     type: "masters",
 },{
     institution: "Politecnico di Torino",
@@ -14,7 +14,7 @@ const education = [{
     description: "Focused on advanced topics in artificial intelligence, machine learning, big data analytics, software engineering, and web development. The program emphasizes both theoretical foundations and hands-on experience through labs and applied projects.",
     courses: ["Data Science and Database Technologies", "Big Data Processing and Analytics", "Bioinformatics", "Computer Architectures", "Web Applications I"],
     universityUrl: "https://www.polito.it/en",
-    logo: "/images/logo_politecnico-cropped.svg",
+    logo: "/images/education/logo_politecnico-cropped.svg",
     type: "masters",
 }, {
     institution: "University of Turin",
@@ -23,7 +23,7 @@ const education = [{
     description: "Acquired strong foundations in software development, algorithms, data structures, databases, computer networks, and operating systems. Developed skills in problem solving, system design, and group collaboration.",
     courses: ["Programming in Java", "Data Structures and Algorithms", "Databases", "Operating Systems", "Computer Networks"],
     universityUrl: "https://en.unito.it/",
-    logo: "images/logo_unito_verticale-cropped.svg",
+    logo: "images/education/logo_unito_verticale-cropped.svg",
     type: "bachelor",
 },]
 
