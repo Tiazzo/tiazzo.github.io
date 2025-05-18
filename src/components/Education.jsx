@@ -12,7 +12,7 @@ const education = [{
     degree: "Master Degree in Computer Engineering \n(AI & Data Analytics)",
     date: "2023 – Current",
     description: "Focused on advanced topics in artificial intelligence, machine learning, big data analytics, software engineering, and web development. The program emphasizes both theoretical foundations and hands-on experience through labs and applied projects.",
-    courses: ["Data Science and Database Technologies", "Big Data Processing and Analytics", "Bioinformatics", "Computer Architectures", "Web Applications I"],
+    courses: ["Data Science and Database Technologies", "Big Data Processing and Analytics", "Bioinformatics", "System and device programming", "Web Applications I"],
     universityUrl: "https://www.polito.it/en",
     logo: "/images/education/logo_politecnico-cropped.svg",
     type: "masters",
