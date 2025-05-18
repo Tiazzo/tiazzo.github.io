@@ -1,4 +1,4 @@
-# 🌐 Mattia Carlino – Personal Website
+# 🪐 Mattia Carlino – Personal Website
 
 This is the source code for my personal website, built to showcase my experience, projects, education, and interests. It's a clean, responsive, and modern portfolio built with React, Tailwind CSS, and deployed via GitHub Pages.
 
@@ -17,11 +17,11 @@ This is the source code for my personal website, built to showcase my experience
 
 ## Tech Stack
 
-- ⚛️ React
-- 💨 Tailwind CSS
-- 🎨 daisyUI
-- ⚡ Vite
-- 🚀 GitHub Pages
+- React
+- Tailwind CSS
+- daisyUI
+- Vite
+- GitHub Pages
 
 ## Setup & Development
 
