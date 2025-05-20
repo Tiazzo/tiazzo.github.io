@@ -47,10 +47,10 @@ export default function Navigation({activeSection}) {
         <div
             className="lg:hidden mt-20 px-6 pb-6 pt-4 flex flex-col gap-4 text-[1.05rem] border-t border-base-content/20">
             <div className="flex gap-4 text-base-content/60 text-xl">
-                <a href="mailto:..." className="hover:text-primary" aria-label="Email"><FaEnvelope/></a>
-                <a href="https://github.com/username" target="_blank" className="hover:text-primary"
+                <a href="mailto:mattia.carlino22@gmail.com" className="hover:text-primary" aria-label="Email"><FaEnvelope/></a>
+                <a href="https://github.com/Tiazzo" target="_blank" className="hover:text-primary"
                    aria-label="GitHub"><FaGithub/></a>
-                <a href="https://linkedin.com/in/username" target="_blank" className="hover:text-primary"
+                <a href="https://www.linkedin.com/in/mattia-carlino-8b6071228/" target="_blank" className="hover:text-primary"
                    aria-label="LinkedIn"><FaLinkedin/></a>
             </div>
         </div>
