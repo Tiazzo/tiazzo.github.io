@@ -50,7 +50,7 @@ export default function Navigation({activeSection}) {
                 <a href="mailto:mattia.carlino22@gmail.com" className="hover:text-primary" aria-label="Email"><FaEnvelope/></a>
                 <a href="https://github.com/Tiazzo" target="_blank" className="hover:text-primary"
                    aria-label="GitHub"><FaGithub/></a>
-                <a href="https://www.linkedin.com/in/mattia-carlino-8b6071228/" target="_blank" className="hover:text-primary"
+                <a href="https://www.linkedin.com/in/mattia-carlino" target="_blank" className="hover:text-primary"
                    aria-label="LinkedIn"><FaLinkedin/></a>
             </div>
         </div>
@@ -86,7 +86,7 @@ export default function Navigation({activeSection}) {
                                aria-label="Email"><FaEnvelope/></a>
                             <a href="https://github.com/Tiazzo" target="_blank" className="hover:text-primary"
                                aria-label="GitHub"><FaGithub/></a>
-                            <a href="https://www.linkedin.com/in/mattia-carlino-8b6071228/" target="_blank"
+                            <a href="https://www.linkedin.com/in/mattia-carlino" target="_blank"
                                className="hover:text-primary" aria-label="LinkedIn"><FaLinkedin/></a>
                         </div>
                         <button onClick={toggleTheme} className="hover:text-primary transition text-2xl"
